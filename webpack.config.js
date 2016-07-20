@@ -1,7 +1,7 @@
 module.exports = {
   entry: './index',
   output: {
-    filename: 'browser-bundle.js'
+    filename: 'bundle.js'
   },
   devtool: 'source-map',
   module: {
@@ -13,6 +13,7 @@ module.exports = {
           presets: ['es2015', 'react']
         }
       },
+      { test: /\.scss$/, loaders: ['style', 'css', 'sass'] }
     ]
   }
-};
+}

@@ -1,4 +1,14 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react'
+import { render } from 'react-dom'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
+// Components
+import App from './src/App'
+
+render((
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+    </Route>
+  </Router>),
+  document.getElementById('app')
+)
