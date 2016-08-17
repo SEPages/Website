@@ -1,0 +1,32 @@
+@import "../abstracts/variables";
+
+header {
+  background-color: $background;
+  left: 0;
+  padding: 20px 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  nav a {
+    color: $white;
+    margin: 0 0 0 5px;
+  }
+}
+
+.siteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siteHeader--section {
+  display: flex;
+  align-items: center;
+}
+
+header a.title {
+  color: $white;
+  font-size: 20px;
+}

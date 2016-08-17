@@ -1,4 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import "../abstracts/_variables.scss";
+
 html,
 body {
-  font-family: -apple-system, Helvetica Neue, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', -apple-system, Helvetica Neue, Helvetica, sans-serif;
+}
+pre {
+  margin: 0;
+  font-family: 'Roboto Mono';
+}
+
+// Syntax highligh
+*.syntax--purple {
+  color: $dev-purple
+}
+*.syntax--pink {
+  color: $dev-pink
+}
+*.syntax--blue {
+  color: $dev-blue
+}
+*.syntax--green {
+  color: $dev-green
+}
+*.syntax--red {
+  color: $dev-red
+}
+*.syntax--turquoise {
+  color: $dev-turquoise
+}
+*.syntax--orange {
+  color: $dev-orange
+}
+
+._indent-1 {
+  padding-left: 60px;
+}
+._indent-2 {
+  padding-left: 120px;
 }

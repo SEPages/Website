@@ -1,0 +1,53 @@
+$width-lg: calc(50% - 15px);
+$width-md: calc(33.33% - 20px);
+
+.card {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 30px 0 30px 0;
+  display: inline-block;
+  width: $width-lg;
+}
+.cardContent {
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding-bottom: calc(100% - 15px);
+  background-color: #ddd;
+}
+.card:nth-child(2n) {
+  margin-left: 30px;
+}
+.cardContent--section {
+  padding: 20px 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.cardTitle h3 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.cardFooter {
+  padding: 20px 25px;
+}
+
+@media (min-width: 1300px) {
+  .card {
+    margin-top: 30px;
+    width: $width-md;
+  }
+  .cardContent {
+    padding-bottom: calc(100% - 15px);
+  }
+  .card:nth-child(3n) {
+    margin-left: 30px;
+  }
+}
